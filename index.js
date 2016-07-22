@@ -1,12 +1,16 @@
 'use strict';
 
 const Node = require('homework-node');
+const debug = require('debug');
+
+const debugLog = debug('homework-queue');
 
 function Queue() {
 
     const singleList = new Node();
 
     this.enqueue = (value) => {
+        debugLog.log(`Enqueue value: ${value}`);
         singleList.addNext(value);
     };
 
