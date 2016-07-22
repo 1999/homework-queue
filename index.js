@@ -10,7 +10,7 @@ function Queue() {
     const singleList = new Node();
 
     this.enqueue = (value) => {
-        debugLog.log(`Enqueue value: ${value}`);
+        debugLog(`Enqueue value: ${value}`);
         singleList.addNext(value);
     };
 
